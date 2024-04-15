@@ -1,0 +1,85 @@
+body{
+    background-image:url(https://images.unsplash.com/photo-1559825481-12a05cc00344?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+    }
+h1 {
+    text-decoration:underline;
+    font-size: 250%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#ede9fe   ;
+    }
+    h2{
+    color: #ede9fe;
+
+    }
+p  {
+    text-decoration:dotted;
+    font-size: 100%;
+    text-align: left;
+    color: #f3e8ff;
+    }
+ol {
+    color:#ede9fe;
+    font-size: 120%;
+ 
+    }
+a:link {
+    color: #fde68a;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    }
+      
+a:hover {
+    color: burlywood;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+      
+a:active {
+    color: rgb(174, 255, 0);
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    .columna-derecha {
+        float: right;
+        column-count: 1; /* Define una sola columna */
+        column-gap: 80px; /* Define el espacio entre las columnas */
+        column-fill: auto; /* Distribuye el contenido de manera uniforme */
+        padding: 30px;
+        height: 900px;
+        width: 200px;
+    }
+    ul {
+        color:#ede9fe;
+        font-size: 100%;
+     
+    }
+.linksSiguiente{
+    color: aqua;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+.columna_izquierda{
+    float: left;
+    column-count: 1; /* Flotar a la izquierda */
+    width: 40%; /* Ancho del 50% */
+    margin-right: 10px; /* Margen derecho para separar las columnas */
+
+    }
+.columna-derecha2{
+    float: left;
+    column-count:1; 
+    width: 30%; /* Ancho del 50% */
+    margin-right: 50px; /* Margen izquierdo para separar las columnas */
+
+    }
