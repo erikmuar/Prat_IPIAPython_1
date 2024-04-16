@@ -1,0 +1,15 @@
+body{
+background-color:grey
+
+}
+h1 {
+text-decoration: underline;
+font-size: 300%;
+text-align: center;
+}
+p{
+text-decoration:dashed;
+font-size: 90%;
+text-align: left;
+
+}
