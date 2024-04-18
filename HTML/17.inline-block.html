@@ -4,17 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inline y block</title>
-</head>
-<body>
-    <!-- los elementos inline no saltan linea -->
-<!-- display block se quedan pegadas siempre -->
-<!--  -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inline y block</title>
+    <!-- los elementos inline no saltan linea, los display block se quedan pegados siempre. -->
     <style>
         body {
             background-color: aliceblue;
@@ -84,9 +74,29 @@
         <img src="doge.jpg" alt="doge" width="100">
         <img src="doge.jpg" alt="doge" width="100">
     </div>
-</body>
-</html>
 
-
+    <h2>div</h2>
+    <style>
+        #card {
+            width: 200px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        #card img {
+            width: 150px;
+        }
+    </style>
+    <div id="card">
+        <h2>Doge</h2>
+        <img src="doge.jpg" alt="doge">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <h2>span</h2>
+    <style>
+        #yellow {
+            background-color: yellow;
+        }
+    </style>
+    <p>Lorem <span id="yellow">ipsum dolor</span>, sit amet consectetur adipisicing elit. Voluptatum, maiores!</p>
 </body>
 </html>
