@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+</head>
+<body>
+  <h1>Tablas</h1>
+
+  <p>algo</p>
+
+  <table>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <!-- Ejemplo de como usar varias columnas con colspan: -->
+      <td colspan="3" style="text-align: center; border: 1px solid white;">Alfreds Futterkiste</td>
+      <!-- <td>Maria Anders</td> -->
+      <!-- <td>Germany</td> -->
+    </tr>
+    <tr>
+      <td>filler</td>
+      <td>filler</td>
+      <td>filler</td>
+    </tr>
+    <tr>
+      <td>filler</td>
+      <td>filler</td>
+      <td>filler</td>
+    </tr>
+    <tr>
+      <!-- Ejemplo de como usar varias filas con rowspan: -->
+      <td rowspan="2" style="border: 2px solid lightgray;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti repellendus fuga, recusandae iste quod impedit sed vero error, enim tempore rem ullam aliquid ad quae odio, suscipit ab incidunt. Quibusdam?</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <!-- <td>Germany</td> -->
+    </tr>
+
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td><img src="doge.jpg" alt=""></td>
+      <td>
+        <img src="doge.jpg" alt="">
+      </td>
+      <td><img src="doge.jpg" alt=""></td>
+    </tr>
+    <tr>
+      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum aspernatur molestias cumque nobis perferendis eius nesciunt! Nesciunt odit quam nostrum veritatis illo incidunt. Blanditiis ratione eveniet sapiente incidunt, reiciendis repellendus.</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td><a href="#">link</a></td>
+      <td><a href="#">link</a></td>
+      <td><a href="#">link</a></td>
+    </tr>
+    <tr>
+      <!-- <td>Alfreds Futterkiste</td> -->
+      <td colspan="3"><img src="https://wallpapertag.com/wallpaper/middle/7/f/a/959976-beautiful-pepe-the-frog-wallpapers-1920x1080-ipad.jpg" alt=""></td>
+      <!-- <td>Germany</td> -->
+    </tr>
+
+    <tr style="display: flex; align-items: center; flex-direction: row;">
+      <td style="display: flex; justify-content: center; flex-direction: column;">
+        <h2 style="text-align: center;">Lista importante:</h2>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+
+  </table>
+
+  <h2>Bordes</h2>
+
+  <style>
+    #bordes {
+      border: 2px solid white;
+    }
+    #bordes tr, #bordes td, #bordes th {
+      border: 2px solid tomato;
+      /* border-width: 5px; */
+      /* border-style: dashed; */
+      /* border-color: black; */
+    }
+    #bordes {
+      border-collapse: separate; /* para visualizar los bordes de los elementos */
+    }
+    #bordes th {
+      background-color: beige;
+      text-align: center;
+      font-weight: 800;
+      color: black;
+    }
+    #bordes td {
+      background-color: aquamarine;
+      color: black;
+    }
+    #boton {
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    #bordes th, #bordes td {
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
+
+  <p>Esto es un <a id="boton" href="doge.jpg">botón</a>.</p>
+
+  <table id="bordes">
+    <tr>
+      <th style="width: 10%;">1</th>
+      <th style="width: 50%;">2</th>
+      <th style="width: 40%;">3</th>
+    </tr>
+    <tr style="height: 100px;">
+      <td>a</td>
+      <td>b</td>
+      <td>c</td>
+    </tr>
+    <tr style="height: 300px;">
+      <td>d</td>
+      <td>e</td>
+      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptas quam labore magni assumenda placeat fugiat, error eveniet exercitationem perspiciatis quis nostrum. Veniam sed, voluptate quia illo earum deleniti repellendus.</td>
+    </tr>
+  </table>
+
+  <h2>Headers</h2>
+
+  <style>
+    #headers th {
+      border: 1px solid white;
+    }
+    #headers caption {
+      border-bottom: 3px solid gray;
+      margin-bottom: 5px
+    }
+    #headers tr {
+      border-bottom: 3px solid silver;
+    }
+    #headers td {
+      padding: 10px;
+    }
+    #headers {
+      border-spacing: 10px;
+      border-collapse: separate;
+    }
+    /* even es par y odd es impar */
+    #headers tr:nth-child(even) {
+      background-color: #D6EEEE;
+      color: black;
+    }
+    td:nth-child(odd) {
+      background-color: gray;
+    }
+    tr:hover {
+      background-color: #D6EEEE;
+      color: black;
+    }
+  </style>
+  <table id="headers">
+    <caption>
+      <h2>Título de la tabla</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, beatae.</p>
+    </caption>
+    <tr>
+      <th colspan="2" rowspan="2">Horas / Tutor</th>
+      <th>L</th>
+      <th>M</th>
+      <th>X</th>
+      <th>J</th>
+      <th>V</th>
+      <th>S</th>
+      <th>D</th>
+    </tr>
+    <tr>
+      <td>César</td>
+      <td>César</td>
+      <td>César</td>
+      <td>César</td>
+      <td>César</td>
+      <td>César</td>
+      <td>César</td>
+      
+    </tr>
+    <tr>
+      <th>8:00</th>
+      <th>AM</th>
+      <td>HMTL</td>
+      <td>CSS</td>
+      <td>JS</td>
+      <td>HTML</td>
+      <td>CSS</td>
+      <td>JS</td>
+      <td>SQL</td>
+    </tr>
+    <tr>
+      <th>9:00</th>
+      <th>AM</th>
+      <td>HMTL</td>
+      <td>CSS</td>
+      <td>JS</td>
+      <td>HTML</td>
+      <td>CSS</td>
+      <td>JS</td>
+      <td>SQL</td>
+    </tr>
+    <tr>
+      <th>10:00</th>
+      <th>AM</th>
+      <td>HMTL</td>
+      <td>CSS</td>
+      <td>JS</td>
+      <td>HTML</td>
+      <td>CSS</td>
+      <td>JS</td>
+      <td>SQL</td>
+    </tr>
+  </table>
+</body>
+</html>
