@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 body{
-    background-color: #1f1b1b;
+    background-color: white;
 
     }
 h1 {
@@ -8,16 +8,16 @@ h1 {
     font-size: 250%;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #9a3412   ;
+    color: black  ;
     }
 p,ol li  {
     text-decoration:dotted;
     font-size: 100%;
     text-align: left;
-    color: #e0f2fe;
+    color: black;
     }
 ol {
-    color:#e0f2fe;
+    color:black;
     font-size: 120%;
     text-align: center;
  
@@ -53,7 +53,8 @@ div {
 img {
     display: inline-block;
     margin: 0 20px;
-=======
+}
+
 body{
     background-color: #262626;
 
@@ -108,5 +109,5 @@ div {
 img {
     display: inline-block;
     margin: 0 20px;
->>>>>>> d0a138513d835636855f8c1b93e6104028784ffb
+
 }
