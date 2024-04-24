@@ -27,7 +27,7 @@ div {
 /* Selector de etiqueta y clase */
 div.miOtraClase {
     text-align: left;
-    background-color: red;
+    background-color:  blue;
     color: rgb(220, 220, 220);
     text-transform: lowercase;
 }
