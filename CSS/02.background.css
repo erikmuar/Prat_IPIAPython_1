@@ -54,7 +54,7 @@ div.gradient {
 }
 .bg-repeat{
     height: 250px;
-    background-image: url('img/pepe.jpg');
+    background-image: url(img/pepe.jpg);
     background-repeat: repeat-x;
 }
 
