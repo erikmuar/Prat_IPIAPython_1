@@ -2,6 +2,80 @@
     box-sizing: border-box;
 }
 
+header img {
+
+    width: 66px ;
+    height: 66px;
+    
+    padding: 5px;
+    margin: auto;
+    background-color:rgba(0, 106, 255, 0.5);
+    }
+    
+    #barranav ul {
+        list-style-type:none;
+        display: flex;
+        width: 1040px;
+        height: 65px;
+        padding: 8px ;
+        overflow:hidden;
+        background-color:rgba(0, 106, 255, 0.5);
+    
+    }
+    #barranav {
+    
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    
+    
+    
+    }
+    #navbar {
+
+        margin: auto 1800px auto auto;
+    }
+    #barranav a:visited{
+    
+        color: white;
+    }
+    
+    #barranav li{
+        float:left;
+        padding:  0px 15px;
+    
+    }
+    
+    #barranav li a{
+    
+     display: block;
+     padding: 15px;
+     text-decoration: dotted;   
+    }
+    
+    .buttonClass {
+    
+    
+        font-size:15px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        width:140px;
+        height:50px;
+        border-width:1px;
+        color:#fff;
+        border-color:#1f2f47;
+        border-radius: 15px;
+        box-shadow:inset 0px 0px 15px 3px #23395e;
+        text-shadow:inset 0px 1px 0px #263666;
+        background:linear-gradient(#2e466e, #415989);
+        text-align: center;
+        padding: 15px;
+        }
+          
+          .buttonClass:hover {
+            background: linear-gradient(#415989, #2e466e);
+          }
+    
 body {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
