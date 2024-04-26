@@ -27,7 +27,6 @@ header img {
 
 width: 66px ;
 height: 66px;
-display: inline-block;
 float: left;
 padding: 5px;
 margin: auto;
@@ -40,11 +39,15 @@ background-color:#818cf8;
     padding: 8px ;
     overflow:hidden;
     background-color:#818cf8;
+    display: flex;
+    width: 1040px;
+    height: 65px;
 
 }
+
 #barranav {
 
-width: 100%;
+width: 1136px;
 margin: 0 auto;
 padding: 15px;
 text-align: center;
@@ -60,6 +63,7 @@ text-align: center;
 #barranav li{
     float:left;
     padding:  0px 15px;
+    
 
 }
 
