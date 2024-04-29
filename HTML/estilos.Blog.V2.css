@@ -27,7 +27,7 @@ header img {
 
 width: 66px ;
 height: 66px;
-float: left;
+
 padding: 5px;
 margin: auto;
 background-color:#818cf8;
@@ -39,15 +39,21 @@ background-color:#818cf8;
     padding: 8px ;
     overflow:hidden;
     background-color:#818cf8;
-    display: flex;
-    width: 1040px;
+    
     height: 65px;
+    
+    
 
 }
 
+
 #barranav {
 
-width: 1136px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 margin: 0 auto;
 padding: 15px;
 text-align: center;
@@ -55,6 +61,7 @@ text-align: center;
 
 
 }
+
 #barranav a:visited{
 
     color: white;
