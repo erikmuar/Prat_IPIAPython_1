@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="responsivewebdesign.css">
+</head>
+
+<body>
+    <h1 id="title"> Encuesta universitaria</h1>
+    <p id="description"> Esta encuesta se enfoca en saber las opiniones de los alumnos de la universidad y sus
+        características</p>
+    <form id="survey-form" action="#" method="post">
+        <fieldset>
+            <div>
+                <label for="name-label" id="name-label">Escribe tu nombre<input id="name" type="text" name="name"
+                        required placeholder="Antonio"></label>
+            </div>
+            <div>
+                <label for="email-label" id="email-label">Correo electrónico <input id="email" name="email" type="email"
+                        required placeholder="ejemplo@ejemplo.com" /></label>
+            </div>
+            <div>
+                <label for="number-label" id="number-label">Edad <input id="number" name="number" type="number" min="14"
+                        max="80" placeholder="14 a 100" /></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <fieldset>
+                <label for="select">
+                    <select name="dropdown" id="dropdown">
+                        <option value=""> Que carrera cursas</option>
+                        <option value="1"> Ingenieria informática</option>
+                        <option value="2"> Arquitectura</option>
+                        <option value="3"> Administración y dirección de empresas</option>
+                        <option value="4"> Traducción e interpretación</option>
+                        <option value="5"> Filosofía</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+
+                <legend>En que año empezaste la carrera</legend>
+                <label for="año2020"><input type="radio" name="año" id="2020" value="2020" class="inline">2020</label>
+                <label for="año2021"><input type="radio" name="año" id="2021" value="2021" class="inline">2021</label>
+                <label for="año2022"><input type="radio" name="año" id="2022" value="2022" class="inline">2022</label>
+                <label for="año2023"><input type="radio" name="año" id="2023" value="2023" class="inline">2023</label>
+                <label for="año2024"><input type="radio" name="año" id="2024" value="2024" class="inline">2024</label>
+
+            </fieldset>
+            <div>
+                <fieldset>
+                    <legend>Cuantas horas estudias a la semana</legend>
+                    <label for="0 a 1"><input type="radio" name="horas" id="0 a 1" value="0 a 1" class="inline">0 a
+                        1</label>
+                    <label for="2 a 4"><input type="radio" name="horas" id="2 a 4" value="2 a 4" class="inline">2 a
+                        4</label>
+                    <label for="5 o más"><input type="radio" name="horas" id="5 o más" value="5 o más" class="inline">5
+                        o más</label>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Que dias de la semana tienes clase</legend>
+                <label for="checkboxes" id="checkboxes">
+                    <input type="checkbox" name="lunes" id="lunes" class="inline" value="Lunes" ">Lunes
+                    <input type="checkbox" name="martes" id="martes" class="inline" value="Martes" >Martes
+                    <input type="checkbox" name="miercoles" id="miercoles" class="inline" value="Miercoles"
+                        >Miércoles
+                    <input type="checkbox" name="jueves" id="jueves" class="inline" value="Jueves" >Jueves
+                    <input type="checkbox" name="viernes" id="viernes"  value="Viernes" class="inline">Viernes
+            </fieldset>
+
+            </label for="descripcion">Describete a ti mismo y comparte un hobbie
+            <textarea name="descripcion" id="descripcion" cols="30" rows="5"
+                placeholder="Me gustan los deportes..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" name="Enviar" id="submit" value="Enviar"> 
+
+
+
+    </form>
+</body>
+
+</html>
