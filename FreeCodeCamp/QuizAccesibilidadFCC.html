@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="QuizAccesibilidadFCC.css">
+</head>
+
+<body>
+    <header>
+        <h1>HTML/CSS Quiz</h1>
+        <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="">INFO</a> </li>
+                <li><a href="">HTML</a> </li>
+                <li><a href="">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student info</h2>
+                <div class="info"><label for="name">Name</label><input id="name" type="text" name="name" placeholder="">
+                </div>
+                <div class="info"><label for="email-address"> Email address</label><input id="email-address"
+                        type="email" name="email"></div>
+                <div class="info"><label for="date-of-birth">D.O.B.<span class="sr-only">(Date of
+                            Birth)</span></label><input id="date-of-birth" type="date" name="date-of-birth"></div>
+            </section>
+
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML Questions</h2>
+                <div class="question-block">
+                    <p>1 </p>
+                    <fieldset class="question">
+
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2 </p>
+                    <fieldset class="question">
+
+                    </fieldset>
+                </div>
+                
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS Questions</h2>
+            </section>
+
+        </form>
+    </main>
+</body>
+
+</html>
