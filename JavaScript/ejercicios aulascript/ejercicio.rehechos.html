@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+</head>
+<body>
+    
+<h2>Ejercicio 1.1</h2>
+<p id="ej-1.1"></p>
+<!-- Has hecho una compra y sabes el precio del producto y su iva. Haz un script que te calcule el precio total que vas a pagar por tu compra.
+
+Te recuerdo que para calcular el total debes sumar al precio el resultado de multiplicasr precio por el iva y dividir por 100.
+Precio 200€
+
+Iva: 21%
+
+El total son 242 €.  //200 + 21*200/100 -->
+
+<script>
+    let precio = 200;
+    let iva = 21;
+    let impuesto = (iva/100)* precio;
+    let total = precio + impuesto; 
+
+    console.log(total)
+
+    document.getElementById("ej-1.1").innerText= `El precio total con IVA es ${total} `;
+
+
+
+</script>
+
+<h3>Ejercicio 1.2</h3>
+<p id="ej-1.2"></p>
+<script>
+
+let precio2 = 100;
+let iva2 = 21 ;
+let impuesto2 = (iva/100)*precio; 
+let total2 = precio2 + impuesto2;
+
+console.log(total2)
+document.getElementById("ej-1.2").innerText= `En este caso el precio total es de ${total2}`
+
+</script>
+ 
+<h2>Ejercicio 2</h2>
+<p id="ej-2"></p>
+
+    <!-- En una variable tienes el lado de un cuadrado, debes escribir un programa que te calcule el área y el perímetro del cuadrado.
+
+El area la calculas como lado multiplicado por lado. El perímetro es la suma de los cuatro lados.
+
+Lado 40
+
+El area es 1600
+
+El perímetro es 169
+-->
+
+<script>
+
+let lado = 40 ;
+let area = lado * lado;
+let perimetro = lado * 4
+
+console.log(`El total del area es ${area}`)  
+console.log(`El total del perímetro es ${perimetro}`)
+
+document.getElementById("ej-2").innerHTML = `El area es ${area} y el perímtetro es ${perimetro}.`
+</script>
+
+<h2>Ejercicio 3 </h2>
+
+<p id="ej-3"> </p>
+
+<!-- Un poco de interactividad. En este ejercicio debes escribir 
+un programa que lea el nombre del usuario y salude con un 
+"Hola" seguido del nombre del usuario.
+
+Para leer el nombre usa un prompt() con un texto indicativo 
+como "Escribe tu nombre"
+
+input: nombre -> "Pepe"
+output: mensaje -> "Hola, Pepe" -->
+
+<script>
+ 
+ let nombre = prompt("¿Cómo te llamas?");
+ let saludo = alert("Hola " + nombre);
+ 
+</script>
+
+<h2>Ejercicio 4 </h2>
+<p id="ej-4"></p>
+
+<!-- En este ejercicio vas a pedir al usuario que teclee tres números enteros 
+y el script mostrará como resultado el valor medio de los tres.
+
+Recuerda que la media de tres números se calcula sumando los tres y dividiendo entre 3.
+
+inputs: num1, num2, num3 // enteros
+output: promedio         // floats
+
+Ejemplo:
+inputs: 10, 20, 30
+output: 60 / 3 = 20 -->
+
+<script>
+
+console.log("Ejercicio 4")
+
+let num1 = Number(prompt("Escribe un número"));
+let num2 = Number(prompt("Escribe otro número"));
+let num3 = Number(prompt("Escribe un último número"));
+
+let suma = num1 + num2 + num3;
+
+console.log("Los números recibidos son", num1, num2, num3)
+console.log( "La suma de los números es ", suma)
+
+let promedio = suma/3 
+
+console.log("El promedio es", promedio )
+
+document.getElementById("ej-4").innerText= `Los números proporcionados son ${num1}, ${num2}, y ${num3}. El promedio es ${promedio}.` 
+
+</script>
+
+
+<h2>Ejercicio 5</h2>
+
+<p id="ej-5"></p>
+<!-- Escribe un programa que solicite al usuario ingresar el número de kilómetros recorridos por su coche y el número de litros consumidos. 
+El script debe mostrar el consumo de combustible por kilómetro.
+
+Un problema matemático muy simple número de litros dividido por número de kilómetros.
+
+input: km, litros
+output: consumo en L / km -->
+<script>
+
+let km = prompt("Indica el número de kilometros");
+let litros = prompt("Indica el número de litros consumidos")
+
+console.log("El número de kilometros recorridos es", km)
+console.log("El número de litros consumidos es", litros)
+
+let consumo = litros / km
+
+console.log("El consumo litros/km es", consumo)
+
+document.getElementById("ej-5").innerText= ` El consumo litros/km es ${consumo}` 
+
+</script>
+
+<h2>Ejercicio 6</h2>
+<p id="ej-6"></p>
+
+<!-- Cambio de unidades. En este ejercicio debes convertir a segundos una medida de tiempo dada en horas y minutos.
+
+Recuerda una hora son 60 minutos y cada minuto son 60 segundos.
+
+inputs: hora, minutos
+output: segundos
+
+Ejemplo:
+1h 45min -->
+
+<script>
+
+let horas =   prompt("Escribe el número de horas")
+let minutos = prompt("Escribe el número de minutos")
+
+console.log("Las horas introducidas son",horas, "y los minutos son", minutos)
+
+let horas_segundo = horas * 3600;
+console.log("Las horas introducidas pasadas a segundo son ", horas_segundo)
+
+let minutos_segundo = minutos * 60;
+
+console.log("Los minutos introducidos a segundos son ", minutos_segundo)
+
+let segundos_totales = horas_segundo + minutos_segundo;
+
+document.getElementById("ej-6").innerText= `Si las horas son ${horas}, y los minutos son ${minutos}, la conversión a segundos es ${segundos_totales} hh:mm ${horas}:${minutos} ` 
+
+</script>
+<h2>Ejercicio 7</h2>
+<p id="ej-7"></p>
+<!-- En este script debes pedir al usuario un número de dos dígitos y debes devolver el número de unidades y de decenas, o sea, cada dígito del número. Usa solo operationes aritméticas.
+
+Recuerda si divides un número entre 10 el cociente entero es
+el número de decenas y el resto es el número de unidades.
+
+input: número de dos dígitos entre 10 y 99 -> entero
+output: decenas, unidades -> enteros -->
+
+<script>
+
+let numero = Number.parseInt(prompt("Escribe un número de 10 a 99"))
+
+let decenas = Number.parseInt(numero/10)
+let unidades = Number.parseInt(numero-(decenas*10))
+
+console.log("DD y uu", decenas, unidades)
+
+document.getElementById("ej-7").innerText= `Las decenas son ${decenas} y las unidades son ${unidades}`
+
+</script>
+
+<h2> Ejercicio 8 </h2>
+<p id="ej-8"></p>
+<!-- Una tortilla de patatas lleva 200 gramos de patatas por persona. 
+Por cada kilo de patatas se necesitan 5 huevos y 300 gramos de cebolla. 
+Escribe un script que dado el número de comensales calcule las cantidades de ingredientes necesarias.
+
+input: comensales
+outputs: ingredientes -> gramosPatatas, gramosCebolla, huevos
+
+2 comensales
+
+2 comensales -> 400g de patata 
+
+kgPatata = gramosPatata/1000 (gramos)
+
+kgPatata = 400/1000 = 0.4 kgPatata
+
+huevos = kgPatata * 5 
+huevos = 0.4 * 5 = 2 
+
+cebolla = kgPatata * 300 
+cebolla = 0.4* 300 = 120g 
+
+
+-->
+<script>
+
+let comensales = Number.parseInt(prompt("Introduce el número de comensales"))
+
+const Gramos_Patata_Persona = 200;
+const Huevos_Por_KG_Patata = 5 ;
+const Gramos_Cebolla_Por_KG_Patata = 300;
+
+let gramosPatata = Gramos_Patata_Persona * comensales;
+let kg_patata = gramosPatata/1000 ;
+let huevos = kg_patata * Huevos_Por_KG_Patata;
+let cebolla = Gramos_Cebolla_Por_KG_Patata * kg_patata;
+
+
+console.log("Con", comensales, "comensales, se necesitan", gramosPatata, "gramos de patata,", huevos,"huevos y ", cebolla, "gramos de cebolla")
+
+document.getElementById("ej-8").innerText= `Para ${comensales} comensales, se necesitan ${gramosPatata}gramos de patata, ${huevos} huevos y ${cebolla} gramos de cebolla ` 
+
+</script>
+
+<h2>Ejercicio 9 </h2>
+<p id="ej-9"></p>
+
+<!-- Este ejercicio es todo un clásico si lo haces a la primera y sin tardar mucho, puedes estar seguro: entiendes las variables.
+
+Teiens que escribir un programa que intercambie el valor de dos variables. Al final la primera variable debe terner el valor de la segunda y la segunda el valor de la primera. No vale usar arrays ni asignación múltiple
+
+inputs: var1, var2
+outputs: var1, var2
+
+Ejemplo:
+var1 = 1
+var2 = 2
+...
+var1 -> 2
+var2 -> 1 -->
+
+<script>
+let temp = var1;
+
+
+
+
+</script>
+
+
+</body>
+</html>
