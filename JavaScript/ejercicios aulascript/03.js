@@ -18,3 +18,9 @@ console.log("Responde al prompt() y verás un alert() con un saludo :)")
 let nombre = prompt("¿Cómo te llamas?");
 let saludo = "Hola, " + nombre;
 alert(saludo); 
+
+let texto = "Hola, ¿qué tal?";
+
+let largoTexto = texto.length;
+
+console.log(largoTexto)
