@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios cesar</title>
 </head>
+
 <body>
     <h2>Operadores aritmeticos</h2>
     <h3>1</h3>
@@ -15,130 +17,262 @@
 - 10 elevado a 3 y 10 elevado a -3 -> ¿qué observas?
  -->
 
- <script>
-    {let arit = 10 + 5 * 2;
-    let arit1 = (10+5)* 2;
-    let arit2 = 10 + (5*2); 
-    
-    console.log(arit, arit1, arit2)} // Se observa que las operaciones tienen como resultado números diferentes aun con los mismos números pero con diferentes parentesis.
+    <script>
+        {
+            let arit = 10 + 5 * 2;
+            let arit1 = (10 + 5) * 2;
+            let arit2 = 10 + (5 * 2);
+
+            console.log(arit, arit1, arit2)
+        } // Se observa que las operaciones tienen como resultado números diferentes aun con los mismos números pero con diferentes parentesis.
 
 
-    let r = 10; 
-    let r2 = 3.14 * r ** 2 // resultado = 314 
+        let r = 10;
+        let r2 = 3.14 * r ** 2 // resultado = 314 
 
-    let elev = 10**3  // 1000
-    let elev1 = 10**-3 // 0.001 
+        let elev = 10 ** 3  // 1000
+        let elev1 = 10 ** -3 // 0.001 
         console.log(elev, elev1) // sube o baja en función de si es positivo o negativo 
 
- </script>
+    </script>
 
- <h3>2</h3>
- <!-- Encuentra el área de un triángulo con base 6 y altura 4. ¿Cómo harías una calculadora de áreas de triángulos? -->
- <p id="calculadoraArea"></p>
+    <h3>2</h3>
+    <!-- Encuentra el área de un triángulo con base 6 y altura 4. ¿Cómo harías una calculadora de áreas de triángulos? -->
+    <p id="calculadoraArea"></p>
     <script>
 
-     {let base = 6;
-     let altura = 4;
-     let area = (base*altura)/2 
-     console.log(area)
+        {
+            let base = 6;
+            let altura = 4;
+            let area = (base * altura) / 2
+            console.log(area)
 
-      let calculadora_base = Number(prompt("Escribe la base del triangulo"))
-      let calculadora_altura = Number(prompt("Escribe la altura del triangulo"))
-      let calculadora_area = (calculadora_base*calculadora_altura)/2
+            let calculadora_base = Number(prompt("Escribe la base del triangulo"))
+            let calculadora_altura = Number(prompt("Escribe la altura del triangulo"))
+            let calculadora_area = (calculadora_base * calculadora_altura) / 2
 
-      console.log(calculadora_base, calculadora_altura, calculadora_area)
+            console.log(calculadora_base, calculadora_altura, calculadora_area)
 
-    document.getElementById("calculadoraArea").innerText = `Si la base es ${calculadora_base} y la altura es ${calculadora_altura}, el area es ${area}. ` }
+            document.getElementById("calculadoraArea").innerText = `Si la base es ${calculadora_base} y la altura es ${calculadora_altura}, el area es ${area}. `
+        }
     </script>
-<h3>3</h3>
+    <h3>3</h3>
 
-<!--  Determina el resultado de la operación 25 / (5 - 5). Al resultado, súmale 10. ¿Cuál es el problema?-->
+    <!--  Determina el resultado de la operación 25 / (5 - 5). Al resultado, súmale 10. ¿Cuál es el problema?-->
 
-<script>
+    <script>
 
-let operacion = 25 / (5-5); // infinito 
+        let operacion = 25 / (5 - 5); // infinito 
 
-let operacion2 = operacion + 10 ; // infinito 
+        let operacion2 = operacion + 10; // infinito 
 
-// el problema es que no se puede dividir un número entre 0 
+        // el problema es que no se puede dividir un número entre 0 
 
-</script>
+    </script>
 
- <h3>4</h3>
-<p id="CalculadoraCuadrado"></p>
-<!--Perímetro de un cuadrado: Encuentra el perímetro de un cuadrado con un lado de longitud 8. ¿Cómo harías una calculadora para este dato a partir del lado? ¿Y el área?  
+    <h3>4</h3>
+    <p id="CalculadoraCuadrado"></p>
+    <!--Perímetro de un cuadrado: Encuentra el perímetro de un cuadrado con un lado de longitud 8. ¿Cómo harías una calculadora para este dato a partir del lado? ¿Y el área?  
  -->
 
-<script>
-{
-    let L = 8; 
-    let area = L**2
-    let perimetro = L*4 
-    console.log(L, area, perimetro)
+    <script>
+        {
+            let L = 8;
+            let area = L ** 2
+            let perimetro = L * 4
+            console.log(L, area, perimetro)
 
-let calculadora_L = Number(prompt("Determina el valor del lado de un cuadrado"))
-let calculadora_areaL = calculadora_L**2; 
-let calculadora_perimetroL = calculadora_L*4 
-console.log(calculadora_L, calculadora_areaL, calculadora_perimetroL)
+            let calculadora_L = Number(prompt("Determina el valor del lado de un cuadrado"))
+            let calculadora_areaL = calculadora_L ** 2;
+            let calculadora_perimetroL = calculadora_L * 4
+            console.log(calculadora_L, calculadora_areaL, calculadora_perimetroL)
 
-document.getElementById("CalculadoraCuadrado").innerText = ` Si el lado es ${calculadora_L}, el area es ${calculadora_areaL} y el perímetro es ${calculadora_perimetroL}.`
-}
-</script>
+            document.getElementById("CalculadoraCuadrado").innerText = ` Si el lado es ${calculadora_L}, el area es ${calculadora_areaL} y el perímetro es ${calculadora_perimetroL}.`
+        }
+    </script>
 
-<h3>5</h3>
-<!-- Calcula el resultado de 2 elevado a la 3 y 2 elevado a 0 y 0 elevado a 0. -> ¿Qué observas? ¿Hay algún problema?  -->
-<script>
-{
-    let potencia = 2**3 ;
-    let potencia1 = 2**0;
-    let potencia2 = 0**0;
-    console.log(potencia, potencia1, potencia2) // No hay problema, cualquier número elevado a 0 da 1.
+    <h3>5</h3>
+    <!-- Calcula el resultado de 2 elevado a la 3 y 2 elevado a 0 y 0 elevado a 0. -> ¿Qué observas? ¿Hay algún problema?  -->
+    <script>
+        {
+            let potencia = 2 ** 3;
+            let potencia1 = 2 ** 0;
+            let potencia2 = 0 ** 0;
+            console.log(potencia, potencia1, potencia2) // No hay problema, cualquier número elevado a 0 da 1.
 
-}
-</script>
+        }
+    </script>
 
-<h2> Operadores de Asignación</h2>
+    <h2> Operadores de Asignación</h2>
 
-<h3>1</h3>
-<!-- Asigna el valor 10 a una variable x y luego incrementa su valor en 3. ¿Cómo haces esto de dos formas distintas pero equivalentes? -->
-<script>
-{
-    let  x10 = 10 
+    <h3>1</h3>
+    <!-- Asigna el valor 10 a una variable x y luego incrementa su valor en 3. ¿Cómo haces esto de dos formas distintas pero equivalentes? -->
+    <script>
+        {
+            let x10 = 10
 
-     x10 = x10 + 3
+            x10 = x10 + 3
 
-     x10 += 3
-}  
-</script>
+            x10 += 3
+        }  
+    </script>
 
 
-<h3>2</h3>
-<!-- Declara una variable total con el valor 50 y calcula:
+    <h3>2</h3>
+    <!-- Declara una variable total con el valor 50 y calcula:
 
 Restar 10
 Sumar 21 %
 Añadir 20 más el 10% de 20 -->
 
+    <script>
+        {
+
+            let total = 50;
+            total -= 10
+            total += (0.21 * total)
+            total += 20 + (0.1 * 20) // total = 70.4
+        }
+    </script>
+
+    <h3>3</h3>
+
+    <script>
+
+        let contador = 5;
+        contador * 2 ** 5 // El resultado es 160, equivale a 5 + 2^5
+    </script>
+    <h3>4</h3>
+    <!-- Asigna el valor 15 a una variable y y luego divídela por 3, 5, 7, 10 (se divide el 15 en cada caso).
+    ¿Cómo sabes en qué casos la división es exacta (resto 0)? -->
+
+    <script>
+        {
+            y = 15
+            y / 3; // 5
+            y / 5; // 3
+            y / 7; // 2.14
+            y / 10; // 1.5
+
+            // Si el modulo es 1, el resto no es 0 
+
+            // para ver si el residuo es 0 podemos usar la operacion con %
+
+            y%=3 // resultado 0 
+            y%=5 // resultado 0 
+            y%=7 // resultado 1
+            y%=10 // resultado 5
+        }
+    </script>
+    <h3>5</h3>
+
+    <!-- Declara una variable saldo con el valor 100 y calcula:
+Quitar 10 %
+Restar 15
+Añadir 12.5 %
+Dividir por 2
+Añadir 21 %
+ -->
+
+    <script>
+
+        let saldo = 100;
+        // quitar 10% 
+        saldo -= (0.1 * saldo)
+        // restar 15 
+        saldo -= 15; // 75
+        //Añadir 12.5 %
+        saldo += (0.125 * saldo) // 84.375
+        // Dividir por 2
+        saldo /= 2; // 42.1875
+        // Añadir 21% 
+        saldo += (0.21*saldo) // 51.0468
+        
+        console.log(saldo)
+
+        // Resultado final 51.0468 mu caro el iva 
+        
+    </script>
+
+<h2>Operadores de Comparación</h2>
+
+<h3>1</h3>
+
+<!-- Comprueba: 
+Añade una explicación del resultado de cada comparación.
+-->
+
+<script>
+
+7 > 3 // true 
+3 < 7 // true 
+1 == '1' // true porque solo se compara el numero
+1 === '1' // false porque son de diferentes tipos, el '1' es string
+3 != '3' // false 
+3 !== 3.0 // false
+
+</script>
+<h3>2</h3>
+<!-- Haz una comparación con la variable edad de un usuario de tipo Number y entero: 
+
+Es mayor de 18
+Es menor que 18
+Está entre 25 y 35 años
+No es mayor de 65 años
+Tiene entre 13 y 24 años cumplidos -->
+
 <script>
 {
+ let Number = 27
+ Number > 18; // True 
+ Number < 18;// false
+ Number > 25 && Number < 35; // True
+ Number < 65;  // true
+ Number > 13 && Number < 24; // False
+}
+</script>
+<h3>3</h3>
 
-let total = 50;
-
-total -= 10
-total += (0.21*total)
-total += 20 +(0.1 * 20) // total = 70.4
+<!-- Determina si es el caso que una variable numérica entre 5 y 10 cumple:
+Es número positivo
+Tiene hasta 2 dígitos
+Es número par
+Es número impar
+Es divisible por 3 -->
+<script>
+{
+let x = 7;
+x > 0 // True, es mayor que 0 
+x<=99 // True 
+x % 2 == 0 //  False por lo que es impar
+x % 2 !== 0 // Cierto por lo que es impar
+x %= 3 // No es divisible porque tiene residuo 1 
 }
 </script>
 
-<h3>3</h3>
+<h3>4</h3>
+<!-- Comprueba si el string Hola, ¿qué tal?:
+Tiene más de 10 caracteres
+Empieza por H
+Tiene algún espacio
+No es nulo o undefined
+Tiene más de 5 caracteres -->
 
 <script>
 
-let contador = 5;
-contador * 2**5 // El resultado es 160
+let texto = "Hola, ¿qué tal?";
+
+let largoTexto = texto.length;
+
+console.log(largoTexto)
+
 </script>
 
 
 
+
+
+x.length cuantos caracteres tiene la variable 
 </body>
+
 </html>
