@@ -308,8 +308,13 @@ No lectivo (los martes) -->
 
 let dia = "Lunes";
 
-let diasLaborales= ["Lunes", "Martes", "Miércoles","Jueves", "Viernes"]
+let diasLaborables= ["Lunes", "Martes", "Miércoles","Jueves", "Viernes"]
 
+let esDiaLaborable = diasLaborables.includes(dia)
+
+console.log(esDiaLaborable)
+
+// Otra forma
 
 if (diasLaborales.includes(dia)){
 
@@ -391,8 +396,19 @@ if (lectivo.includes(dia)){
     let hola = "Hola, "
     hola + "Pedro" 
 // La hora 
-"La hora actual es: " + [new Date ().getHours()]
- 
+"La hora actual es: " + [new Date ().getHours()] // 'La hora actual es: 19'
+
+// Suma 
+{
+let num1 = 1;
+let num2 = 4;
+
+ let result =num1 + num2 
+
+"El resultado de la suma es " + result
+}
+
+
 </script>
 
 
