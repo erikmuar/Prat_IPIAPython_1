@@ -28,7 +28,7 @@
 
 
         let r = 10;
-        let r2 = 3.14 * r ** 2 // resultado = 314 
+        let Pi = 3.14 * r ** 2 // resultado = 314 
 
         let elev = 10 ** 3  // 1000
         let elev1 = 10 ** -3 // 0.001 
@@ -178,11 +178,11 @@ Añadir 21 %
 
         let saldo = 100;
         // quitar 10% 
-        saldo -= (0.1 * saldo)
+        saldo -= (0.1 * saldo) // saldo *= 0.9 
         // restar 15 
         saldo -= 15; // 75
         //Añadir 12.5 %
-        saldo += (0.125 * saldo) // 84.375
+        saldo += (0.125 * saldo) // 84.375 // otra forma saldo *= (1+0.125)
         // Dividir por 2
         saldo /= 2; // 42.1875
         // Añadir 21% 
@@ -282,16 +282,194 @@ let index = texto.indexOf(" "); // encuentra en la posición 5 por lo que hay
 
 texto != undefined // da true por lo que no es nulo 
 
+// Tiene mas de 5 carácteres 
 
+if (textArray.length > 5){   // comprobamos y aparece que el texto tiene mas de 5 carácteres
 
+    console.log("El texto tiene mas de 5 carácteres ");
+} else {
+    console.log("El texto tiene 5 o menos carácteres")
+}
 
 </script>
 
+<h3>5</h3>
+<!-- Realiza las comparaciones necesarias para verificar si un día (String) es:
+Día laboral
+Fin de semana
+Lunes o Jueves
+Viernes
+No lectivo (los martes) -->
 
-<script></script>
+
+<script>
+
+// Dia laboral
+
+let dia = "Lunes";
+
+let diasLaborables= ["Lunes", "Martes", "Miércoles","Jueves", "Viernes"]
+
+let esDiaLaborable = diasLaborables.includes(dia)
+
+console.log(esDiaLaborable)
+
+// Otra forma
+
+if (diasLaborales.includes(dia)){
+
+    console.log(dia  +" es un dia laboral")
+} else {
+
+    console.log(dia + "no es un dia laboral")
+}
 
 
-x.length cuantos caracteres tiene la variable 
+// Fin de semana
+
+let finDeSemana = ["Sabado", "Domingo"]
+
+if(finDeSemana.includes(dia)){
+
+    console.log( dia +  " es fin de semana")
+}else {
+
+    console.log(dia + " no es fin de semana")
+}
+
+// Lunes o jueves 
+
+let lunesOjueves = ["Lunes", "Jueves"]
+
+if( lunesOjueves.includes(dia)){
+
+    console.log(dia + " es lunes o jueves")
+}else {
+
+ console.log(dia + " no es lunes o jueves ")
+}
+
+// Viernes
+
+let viernes = "Viernes"
+
+if( viernes.includes(dia)){
+
+    console.log(dia + " es viernes")
+} else{
+
+    console.log(dia + " no es viernes")
+} // No es viernes
+
+// No lectivo (martes)
+
+let lectivo = "Martes"
+
+if(dia === lectivo){
+
+    console.log( dia + " es lectivo")
+}else{
+console-log(dia + " no es lectivo")
+
+}
+
+
+if (lectivo.includes(dia)){
+
+    console.log(dia + "es martes")
+}else {
+
+    console.log(dia + "no es martes")
+}
+</script>
+
+<h2>String Operators</h2>
+<h3>1.Concatena las cadenas:</h3>
+
+<!-- 
+    Hola,  y el nombre de un usuario
+    La hora actual es:  y la salida de new Date().getHours() y  h
+    Para un par de números, haz una suma y concatena: El resultado de la suma de , num1, num2, es: , suma -->
+
+<script>
+// Hola
+    let hola = "Hola, "
+    hola + "Pedro" 
+// La hora 
+"La hora actual es: " + [new Date ().getHours()] // 'La hora actual es: 19'
+
+// Suma 
+{
+let num1 = 1;
+let num2 = 4;
+
+ let result =num1 + num2 
+
+"El resultado de la suma es " + result
+}
+
+</script>
+<h3>2 </h3>
+<!-- Calcula la longitud de las cadenas:
+""
+"Hola"
+1+1=2 
+-->
+<script>
+{
+let x = ""
+
+console.log(x.length) // Largo = 0 
+
+let x1 = "Hola"
+
+console.log(x1.length) // Largo = 4
+
+let x2 = "1+1=2"
+
+console.log(x2.length) // Largo = 5
+}
+</script>
+
+<h3>3</h3>
+<!-- 
+Concatena
+- Dos números, la suma y el resultado
+- Tres números, el promedio y el resultado
+- Un número, la raiz cuadrada y el resultado
+ -->
+ <script>
+{
+    let x = 5; y = 7; z = x+y;
+    
+    console.log(x, y, z) // 5 7 12 
+
+    let v = 4; 
+    promedio = (x+y+v)/3;
+
+    console.log(v, promedio) // 4 5.33333
+
+    let num = 6;
+    let raiz = Math.sqrt(num)
+
+    console.log(num, raiz) // 6 2.4494
+    num, raiz
+}
+ </script>
+
+<h2>Operadores Lógicos</h2>
+<h3>1</h3>
+
+<h3>2</h3>
+
+<h3>3</h3>
+
+<h3>4</h3>
+
+<h3>5</h3>
+
+
+
+
 </body>
-
 </html>
