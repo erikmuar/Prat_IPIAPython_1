@@ -71,19 +71,46 @@ switch(day.toLowerCase()){
 // for y sus variantes
 
 // for: Se usa para repetir acciones un número de veces, normalmente cuando el número de veces es desconocido 
+// Bucle que se repite 10 veces.
 
 for (let i = 0; i < 10; i++){
+    console.log("Iteración",i)
+}
+// cuenta hasta 8 
+for (let j = 0; j < 8; j++){
+    console.log("iteración", j)
+}
+// cuenta atras 
+for(let i = 10; i > 0; i--){
+    console.log("iteración", i)
+}
+// Suma los primeros 100 números enteros 
+suma = 0 
+for(x = 0; x < 100; x++){
+    suma+= x
+console.log("Suma",suma)
 
 }
 
-
-let casa ={
-
-    "habitacion1": "cocina",
-    "habitacion2": "baño",
-    "habitacion3": "salon"
+suma = 0 
+for(x = 0; x<100; x++){
+    suma += x
+console.log("Suma", suma)
 }
 
-for(let cuarto in casa){
-    console.log(cuarto)
+
+suma = 0
+for(x = 0; x<100; x++){
+    suma = suma + x;
+    console.log("Suma", suma)
 }
+
+// for in -> objetos
+
+let coche = {
+
+    "marca": "volvo",
+    "modelo": "v80",
+    "año": 2009,
+}
+coche."marca"
