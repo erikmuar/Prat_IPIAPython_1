@@ -14,7 +14,7 @@ if(edad > 18){
 //if else if else
 if(edad > 18){
     console.log("Eres mayor de edad")
-} else if(edad == 18){
+} else if(edad == 18){  
     console.log("Eres mayor de edad también")
 } else{
     console.log("Eres menor de edad")
