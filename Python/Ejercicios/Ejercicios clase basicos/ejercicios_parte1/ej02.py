@@ -22,7 +22,7 @@ assert r_1 == 3
 # %% ¿Cómo se puede calcular el máximo o mínimo de una lista de números?
 # Por simplicidad podemos suponer que son int
 lista = [44,25,140,2,57,91]
-
+    
 resultado = max(lista)
 print(resultado)
 
