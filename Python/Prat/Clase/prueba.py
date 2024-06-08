@@ -6,12 +6,22 @@ b = 50
 print(1+1)
 # %% 
 
+n = int(input("Introduce un numero: "))
+for i in range(10):
+    resultado = i * n
 
-print("ey que pasa")
+# %%
 
-# %% 
-print("oops")
+numero = int(input("Introduce un numero"))
 
+for i in range(3,10):
+    
+    resul = i * numero
+    print(f"La multiplicacion {i} * {numero} = {resul}")
+# %%
 
-print(a + b)
-# %% 
+for numero in range(1,10):
+    print("--- Tabla del",str(numero),"---")
+    for i in range(1,10):
+        resultado = i*numero
+        print(numero," x",i,"=",resultado)
