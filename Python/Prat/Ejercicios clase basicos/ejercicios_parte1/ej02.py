@@ -65,3 +65,53 @@ numero_minimo_lista(conjunt)
 lista = [-1, 0, 1] # max -> 1
 res = calcular_maximo_lista(lista)
 assert res == 1
+
+
+#%% 
+print("Bienvenidos")
+
+  
+url = str(input("Introduce la pagina web: "))
+
+if url.startswith("https://"):
+  print("Es una web segura")
+else: 
+  print("No es segura")
+  
+
+# %%
+
+num = int(input("Introduce un numero: "))
+
+resultado = num%2 
+
+if resultado == 0: 
+  print("Numero par")
+else: 
+  print("numero impar")
+  
+  #%% 
+  
+# Es la persona mayor de 18 años ? 
+
+edad = int(input("Introduce la edad: "))
+
+if edad >= 18: 
+  print("Eres mayor de edad")
+elif edad >=12: 
+  print("Eres adolescente")
+elif edad >=6: 
+  print(" Eres un niño: ")
+else: 
+  print("Eres un bebé")
+  
+  # %% 
+  def num_min(lista:list):
+   numero = lista[0]
+   for i in lista:
+    if numero > i:
+      numero = i  
+   print(numero)
+      
+  num_min([2,5,9,10,1])
+# %%
