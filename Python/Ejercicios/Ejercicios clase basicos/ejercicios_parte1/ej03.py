@@ -8,7 +8,34 @@ print(len(string))
 
 # %% bucle
 def contar_chars(string: str) -> int:
-  pass # -> return
+  contador = 0 
+  for i in string: 
+    contador += 1
+  return contador 
+    
+    
+contar_chars("Buenos dias")
+
 #%% Tests
 string = "Hola, qué tal?" # 14
 assert contar_chars(string) == 14
+
+
+
+# %%
+def contar_caracteres(lista):
+  contador = 0 
+  for i in lista:
+    
+    return len(lista)
+
+contar_caracteres([2,3,65,7,11])
+# %%
+
+def contar_letras(lista):
+  for i in lista:
+    return len(lista)
+  
+lista = ["Hola", "Buenas", "como va"]
+contar_letras(lista)
+# %%
