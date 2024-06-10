@@ -9,7 +9,14 @@ print(fruta_random in frutas)
 #%% Ejercicio:
 # vocales_lista = [...]
 def verificar_vocal(vocal: str) -> bool:
-  pass
+  vocales_lista = ["a","e","i","o","u"]
+  
+  if vocal in vocales_lista:
+    return True
+  else: 
+    return False
+  
+verificar_vocal("p")
 #%% Test
 assert verificar_vocal('a') == True
 assert verificar_vocal('z') == False
