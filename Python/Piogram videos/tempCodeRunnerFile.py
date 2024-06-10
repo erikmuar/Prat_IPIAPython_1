@@ -1,11 +1,7 @@
-veces = int(input("Cuantos números deseas ingresar: "))
+segundos = int(input("Ingresa la cantidad de segundos: "))
 
-for i in range(veces): 
-    acumulado = 0 
-    num = int(input("Ingrese un numero: "))
-    if (num%2 == 0):
-        print(num)
-    elif(num%2 == 1):
-        acumulado+=num
-    
-print("La suma de los impares es: ", acumulado)
+minutos = round(segundos / 60)
+
+horas = round( / 3600)
+
+print(horas,minutos)
