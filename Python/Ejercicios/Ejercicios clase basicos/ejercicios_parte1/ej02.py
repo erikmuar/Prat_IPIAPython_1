@@ -60,7 +60,7 @@ def numero_minimo_lista(lista):
 
 conjunt = [20,10,6,42,82]
 numero_minimo_lista(conjunt)
-    
+   
 # %% Tests
 lista = [-1, 0, 1] # max -> 1
 res = calcular_maximo_lista(lista)
