@@ -89,9 +89,9 @@ if resultado == 0:
   print("Numero par")
 else: 
   print("numero impar")
-  
-  #%% 
-  
+
+
+
 # Es la persona mayor de 18 años ? 
 
 edad = int(input("Introduce la edad: "))
