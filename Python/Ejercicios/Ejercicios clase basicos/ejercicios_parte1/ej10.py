@@ -28,9 +28,9 @@ def comprobar_nota(lista:list):
     
     
     if promedio < 5:
-        print(f"El promedio es {promedio}, por lo que ha suspendido")
+        return (f"El promedio es {promedio}, por lo que ha suspendido")
     else: 
-        print(f"El promedio es {promedio}, por lo que ha aprobado")
+        return (f"El promedio es {promedio}, por lo que ha aprobado")
         
-comprobar_nota([5.8,7.4,9.2])
+comprobar_nota([5.8,7.4,9.2,5.1,3.5,1.1])
 # %%
