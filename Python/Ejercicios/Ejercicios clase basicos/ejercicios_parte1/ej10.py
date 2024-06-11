@@ -18,3 +18,19 @@ def procedimiento(lista:list):
         
 procedimiento([4,11,9])
 # %%
+# Hacer una funcion en la que introduzcas una lista de numeros [4,7,8] y te devuelva la media y si has aprobado o no
+
+def comprobar_nota(lista:list):
+    sumatorio = 0
+    for num in lista:
+       sumatorio+=num
+    promedio = sumatorio/len(lista)
+    
+    
+    if promedio < 5:
+        print(f"El promedio es {promedio}, por lo que ha suspendido")
+    else: 
+        print(f"El promedio es {promedio}, por lo que ha aprobado")
+        
+comprobar_nota([5.8,7.4,9.2])
+# %%
