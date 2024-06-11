@@ -1,0 +1,1 @@
+# Crea un programa que simule el juego del ahorcado, su programa debe seleccionar una palabra aleatoria de una lista de palabras, ejemplo si la palabra es "POLLOS" entonces muestre una pista "P____S"
