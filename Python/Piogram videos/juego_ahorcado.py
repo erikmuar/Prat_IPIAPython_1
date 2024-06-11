@@ -9,6 +9,3 @@ pal = palabras[indice]
 palMayus= pal.upper()
 letraPri = palMayus[0] 
 
-
-200.234.234.102
-rBARgE52hzLRWLR3
