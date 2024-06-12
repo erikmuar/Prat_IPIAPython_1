@@ -3,9 +3,39 @@
 
 import random as rd
 palabras = ["Madserker","Melon","Hola","Python","jueves"]
-num = len(palabras)
-indice = rd.randint(0,num - 1) # Desde 0 que es la primera posicion de la lista hasta el len -1 porque va de 0 a 4 no a 5 
+indice = rd.randint(0,len(palabras) - 1) # Desde 0 que es la primera posicion de la lista hasta el len -1 porque va de 0 a 4 no a 5 
 pal = palabras[indice]
 palMayus= pal.upper()
 letraPri = palMayus[0] 
+letraUlt= palMayus[-1]
+n = " _ "*(len(palMayus)-2)
+print(letraPri, n, letraUlt)
 
+palUser = input("Adivine la palabra").upper
+
+
+
+#%%
+
+import random as rd 
+
+palabras = ["Madserker","Melon","Hola","Python","jueves"]
+
+
+
+indice = rd.randint(0,len(palabras)-1)
+palab = palabras[indice]
+palabMayus = palab.upper()
+letraPri = palabMayus[0]
+letraUlt= palabMayus[-1]
+n = " _ "* (len(palabMayus)-2)
+print(letraPri, n, letraUlt)
+
+
+palUser = input("Adivina la palabra")
+
+if palUser == palabMayus:
+    print("Win") 
+
+
+# %%
