@@ -2,14 +2,15 @@
 import random
 
 billetera = 10
-
 ganado = 0
+continuar = "Si"
 print("--- Bienvenido a Cho Han ---")
 print(f"Usted tiene {billetera}$ en la billetera")
 
+apuesta = int(input("Haga su apuesta: "))
 
-while billetera > 0:
-    apuesta = int(input("Haga su apuesta: "))
+while billetera > 0 and continuar == "Si":
+   
     if apuesta <= billetera:
         dado1 = random.randint(1,6)
         dado2= random.randint(1,6)
@@ -17,11 +18,68 @@ while billetera > 0:
         resto = total%2
         parimp = input("Adivina, ¿Es par o impar?")
         print(f"Salió {dado1} y {dado2} = {total} ")
+        
+        if resto == 0 and parimp == "par":
+            billetera += apuesta
+            ganado+=1 
+            print("Has ganado!")
+        elif resto !=0 and parimp == "impar":
+            billetera+=apuesta
+            ganado+=1
+            print("Has ganado!")
+        else: 
+            billetera-=apuesta 
+            
+        print(f"Dinero restante en la billetera es: {billetera}")
+        
+        if billetera != 0:
+            continuar = input("¿Deseas continuar? Si o No  ")
+
+            
+            
+        
     else:
         print("El dinero es mayor al que tiene en la billetera")
     
-    
-    
-apuesta = int(input("Cuanto dinero deseas apostar?"))
+print(f"Has ganado {ganado} partidas")
+print("Gracias por jugar.")
 
 
+
+
+import random 
+
+billetera = 10 
+ganado = 0 
+continuar = "Si"
+print("----------- Bienvenido a Cho Han ------------------")
+apuesta = input("Haga su apuesta: ")
+
+while billetera > 0 and continuar == "Si":
+    
+     if apuesta <= billetera: 
+            dado1 = random.randint(1,6)
+            dado2 = random.randint(1,6)
+            total = dado1 + dado2 
+            residuo = total%2
+            parimp= input("¿Es par o impar?")
+            print(f"Ha salido {dado1} y {dado2} = {total}")
+        
+            if residuo == 0 and parimp == "par":
+                billetera +=apuesta 
+                ganado +=1
+                print("Has ganado!")
+            elif residuo!= 0 and parimp == "impar":
+                billetera +=apuesta 
+                ganado += 1 
+                print("Has ganado!")
+            else:
+                billetera -=apuesta
+                print("Has perdido!")
+            print(f"Dinero restante en la billetera: {billetera}")
+            
+            if billetera != 0:
+               continuar = input("¿Deseas continuar? Si o No")
+                 
+     else:
+        print("El dinero es mayor al que tiene en la billetera")        
