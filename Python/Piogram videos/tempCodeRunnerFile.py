@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Juego Cho Han
 import random
 
@@ -42,3 +43,25 @@ while billetera > 0 and continuar == "Si":
     
 print(f"Has ganado {ganado} partidas")
 print("Gracias por jugar.")
+=======
+for num in range(1,100):
+    if num > 1: 
+
+        contador = 0 
+
+        i = 2
+
+        while i < num and contador == 0: 
+            resto = num%i
+            
+            if resto == 0:
+                contador+=1
+            i +=1 
+        if contador == 0:
+            print(num)  
+      
+    
+        
+ 
+    
+>>>>>>> 9e6496c448088759bd490591539f3729eda104b7
