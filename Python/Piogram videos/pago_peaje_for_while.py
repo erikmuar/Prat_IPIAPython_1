@@ -7,6 +7,7 @@
 # Total recaudado por cada tipo de automotor 
 # Cual es el tipo de Automotor que mas transita por el peaje
 
+
 automotores = ["Vehiculos", "Camiones","Tractomula"]
 precios= [3.5,12.00,16.00]
 contL= [0,0,0]
