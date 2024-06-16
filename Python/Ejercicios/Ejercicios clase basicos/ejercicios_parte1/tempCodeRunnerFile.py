@@ -1,12 +1,13 @@
-# Ejercicio 2
-# Escribir una función mas_larga() que tome una lista de palabras y devuelva la mas larga.
-
-def mas_larga(lista:list):
+def filtrar_palabras(lista:list,n:int):
     
-    word = lista[0]
-    for palabra in lista:
-        if (len(word) < len(palabra)): 
-            word = palabra
-    print(word)
-        
-mas_larga(["hola","califragilistico","diez", "melon"])
+    for largo in lista:
+        posicion = lista.index(largo)
+        if (len(largo) <= n):
+            del lista[posicion]
+        else:
+            print(largo)
+            
+    
+    
+   
+filtrar_palabras(["nueve","dos","cuarenta","diecisiete","hola","jamones"],8)
