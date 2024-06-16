@@ -1,4 +1,4 @@
-# Ejercicio 2
+# Ejercicio 12
 # Escribir una función mas_larga() que tome una lista de palabras y devuelva la mas larga.
 
 def mas_larga(lista:list):
