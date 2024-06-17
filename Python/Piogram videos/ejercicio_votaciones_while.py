@@ -15,6 +15,20 @@ voto = input("Introduce el nombre de la persona que quieras votar o introduce ""
 while voto != "FIN":
     votoMayus = voto.title()  # .title() es para que la primera letra de la palabra sea mayuscula
     if votoMayus in lista:   
-        posicion = lista.index(voto)
+        posicion = lista.index(votoMayus)
         contadorVotos[posicion]+= 1
+    else: 
+        print("Voto no valido")
+    voto = input("Introduce el nombre de la persona que quieras votar o introduce ""FIN"": ")
+cantVotos = sum(contadorVotos)
+
+
+masVotos = max(contadorVotos)
+
+posGanador = contadorVotos.index(masVotos) 
+
+ganador = lista[posGanador]
+
+print(f"La cantidad de votos ha sido {cantVotos}")
+print(f"El ganador de la votacion ha sido {ganador}, con {masVotos} votos")
 
