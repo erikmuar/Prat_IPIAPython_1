@@ -1,3 +1,3 @@
-diccionario = {"c1":"valor1", "c2":"valor2"}
+numero = bool(5>6)
 
-print(diccionario)
+print(numero)
