@@ -30,3 +30,4 @@ for a,b in dic.items():
     print(a,b) # Se imprime todo pero separado  
 
 
+  
