@@ -1,0 +1,54 @@
+# Ir a carpeta de trabajo
+  # Crear entorno virtual:
+  python3 -m venv venv
+  ls # debe salir carpeta venv
+  # Activamos el venv:
+  source venv/bin/activate
+  # Desactivar:
+  deactivate
+  # Activamos el venv:
+  source venv/bin/activate
+  # Ver lista de paquetes
+  pip list
+  # Instalar Django:
+  pip install django
+  pip list # debe salir Django
+  # Iniciar proyecto Django:
+  django-admin startproject MiDjango .
+  # Ver estructura de carpetas y archivos:
+  tree MiDjango/
+  # Entramos en carpeta Django:
+  cd MiDjango/
+
+  tree MiDjango
+  python3 manage.py runserver  # en mi caso el port es 8000
+  # port -> 8000, 8001...
+  # http://200.234.234.102:8025/
+
+  # Abrir settings.py:
+  ALLOWED_HOSTS = ['*']
+  # para todos los hosts
+  mkdir static templates
+  # tb en settings:
+  'DIRS': [BASE_DIR / "templates"],
+  # colocar index.html en templates/
+  # En views.py  
+  from django.shortcuts import render
+
+  def index(request):
+    return render(request, "index.html")
+
+  # En urls.py:
+  from django.contrib import admin
+  from django.urls import path
+
+  from MiDjango.views import index
+
+  urlpatterns = [
+      path('admin/', admin.site.urls),
+      path('', index, name="index"),
+  ]
+  # Guarda todo
+  # Finalmente
+  python manage.py runserver 
+  
