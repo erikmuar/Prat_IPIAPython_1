@@ -12,6 +12,20 @@
 <br>
 <p>Hola como andamios yo muy bien tu que</p>
 
+<hr>
+<ul>
+{% for i in objeto %}
+
+<li><a href="autor/{{i.id}}">{{i.nombre}}</a></li> 
+<ul>
+{%for u in i.profesion.all%}
+<li>{{u.nombre}}</li>
+{% endfor %}
+</ul>
+
+{% endfor%}  
+
+
 
     <script src="{% static 'script.js'%}"></script>
     

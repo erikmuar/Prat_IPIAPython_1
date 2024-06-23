@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>{{objeto.name}}</h1>
+
+
+    {% for i in objeto.frasedb_set.all %}
+
+    <ul>
+        <li>{{i.cita}} </li>
+    </ul>
+
+
+
+    {% endfor %}
+
+
+    <ul></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
