@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=c:\Code\Prat_IPIAPython_1\Python\Django\Taller_Estuardodev\venv
+set VIRTUAL_ENV=C:\Users\USUARIO\Desktop\github\Prat_IPIAPython_1\Python\Django\Taller_Estuardodev\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
