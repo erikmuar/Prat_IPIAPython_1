@@ -9,12 +9,14 @@ intentos = 0
 
 solucion = randint(1,100)
 
+numero = 0
+
 
 while intentos < 8: 
     numero = int(input("Introduce un número: "))
     intentos += 1
     
-    if numero < 1 and numero > 100:     
+    if numero not in range(1,101):     
         print("Este número no está permitido, vuelve a elegir otro.")
         
     elif numero < solucion: 
