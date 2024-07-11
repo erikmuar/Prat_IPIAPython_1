@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="FormularioRegistroBlog.css">
+</head>
+
+<body>
+    <h1>Registro</h1>
+    <p>Registrate en nuestro blog para enterarte de futuras actualizaciones </p>
+
+
+    <form method="post" action="https://register.animalesextincion.com">
+        <fieldset>
+            <label for="Nombre"> Nombre <input type="text" name="first-name" id="Nombre" required></label>
+            <label for="Apellidos">Apellidos<input type="text" name="Apellidos" id="Apellidos" required></label>
+            <label for="email">Correo electrónico<input type="email" name="email" id="email" required></label>
+            <label for="Contraseña">Contraseña<input type="password" name="Contraseña" id="Contraseña" required
+                    pattern="[a-z0-5]{8,}"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Tipo de cuenta</legend>
+            <label for="cuenta-personal">Personal<input type="checkbox" id="cuenta-personal" name="cuenta-personal"
+                    class="inline" checked></label>
+            <label for="cuenta-profesional">Profesional <input type="checkbox" id="cuenta-profesional"
+                    name="cuenta-profesional" class="inline"></label>
+            <label for="cuenta-ong">ONG <input type="checkbox" id="ong" name="ong" class="inline"></label>
+        </fieldset>
+        <fieldset>
+            <label for="foto-de-perfil">Sube una foto de perfil <input type="file" name="foto-perfil"
+                    id="foto-perfil"></label>
+            <label for="edad">Edad <input type="number" name="edad" id="edad" min="13" max="120"></label>
+            <label for="referrer">Como has sabido de nosotros
+                <select name="referrer" id="referrer">
+                    <option value=""></option>
+                    <option value="1">Redes sociales</option>
+                    <option value="2"> Un conocido</option>
+                    <option value="3">Internet</option>
+                </select>
+            </label>
+            <label for="bio">Escribe una pequeña biografia
+                <textarea name="bio" id="bio" cols="30" rows="3"
+                    placeholder="Me gustan los animales porque..."></textarea>
+            </label>
+        </fieldset>
+        <label for="terms-and-conditions">
+            <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" class="inline" required> Acepto
+            los <a href="#">términos y condiciones de uso</a>
+        </label>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>

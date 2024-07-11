@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+header img {
+
+    width: 66px ;
+    height: 66px;
+    
+    padding: 5px;
+    margin: auto;
+    background-color:rgba(0, 106, 255, 0.5);
+    }
+    
+    #barranav ul {
+        list-style-type:none;
+        display: flex;
+        width: 1040px;
+        height: 65px;
+        padding: 8px ;
+        overflow:hidden;
+        background-color:rgba(0, 106, 255, 0.5);
+    
+    }
+    #barranav {
+    
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    
+    
+    
+    }
+    #navbar {
+
+        margin: auto 1800px auto auto;
+    }
+    #barranav a:visited{
+    
+        color: white;
+    }
+    
+    #barranav li{
+        float:left;
+        padding:  0px 15px;
+    
+    }
+    
+    #barranav li a{
+    
+     display: block;
+     padding: 15px;
+     text-decoration: dotted;   
+    }
+    
+    .buttonClass {
+    
+    
+        font-size:15px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        width:140px;
+        height:50px;
+        border-width:1px;
+        color:#fff;
+        border-color:#1f2f47;
+        border-radius: 15px;
+        box-shadow:inset 0px 0px 15px 3px #23395e;
+        text-shadow:inset 0px 1px 0px #263666;
+        background:linear-gradient(#2e466e, #415989);
+        text-align: center;
+        padding: 15px;
+        }
+          
+          .buttonClass:hover {
+            background: linear-gradient(#415989, #2e466e);
+          }
+    
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-image: url(fondomarino.jpg);
+    
+    
+}
+
+h1 {
+    font-size: 250%;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+#Bloque {
+    width: 95%;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color:rgba(0, 106, 255, 0.5);
+
+}
+
+#Introducción {
+
+    border: 1px solid red;
+    padding: 10px;
+    display: flex;
+    float: left;
+
+}
+
+h2 {
+
+    padding: 10px;
+
+}
+
+#columnaDerecha {
+    border: 1px solid green;
+    display: flex;
+    float: right;
+    column-count: 1;
+    column-gap: 80px;
+    column-fill: auto;
+    padding: 10px;
+    height: 370px;
+    width: 200px;
+    margin: auto;
+    
+
+
+}
+
+#columnaDerecha li {
+    list-style-type: none;
+    text-align: left;
+    text-decoration: none;
+   
+
+}
+
+#columnaDerecha li a {
+
+    text-decoration: none;
+    color: white;
+   
+}
+
+#Fisico {
+    border: 1px solid white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#Fisico img {
+    width: 30%;
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+#Historia_del_ajolote {
+
+border: 1px solid pink;
+display: flex;
+
+}
+#Historia_del_ajolote img {
+
+width: 30%;
+padding: 10px;
+margin: 10px;
+float: left;
+
+}
+#Regeneracion {
+
+border: 1px solid yellow;
+
+}
+
+#Regeneracion img {
+
+margin-left: 370px;
+padding: 10px;
+width: 600px;
+text-align:right;
+
+
+}
+
+#Partido {
+
+border: 1px solid black;
+padding: 10px;
+margin: auto;
+
+
+
+}
+
+#Filtracion {
+
+width: 46%;
+text-align: left;
+border: 1px solid blue;
+display: inline-block;
+margin-bottom: 200px;
+
+
+}
+
+#filtracionTitulo{
+width: 49%;
+border: 1px solid white;
+float: left;
+
+}
+
+#sustratoTitulo{
+width: 49%;
+text-align: right;
+border: 1px solid black;
+float: left;
+}
+
+
+
+
+#sustrato  {
+
+width: 46%;
+text-align: right;
+border: 1px solid brown;
+display: inline-block;
+margin-left: 50px;
+
+}
+
+#sustrato img{
+
+ display: inline-block;
+ margin-right: 150px; 
+ margin-top: 25px;
+ text-align: right;
+ width: 50%; 
+}
+
+#ajoloteGif{
+border: 1px solid blue;
+text-align: center;
+width: 100%;
+
+}
+
+#OtrosPost a{
+
+    list-style-type: none;
+    text-decoration: none;
+
+
+}
+#OtrosPost a:visited{
+
+color: black;
+}
+

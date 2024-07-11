@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+header img {
+
+    width: 66px ;
+    height: 66px;
+    float: left;
+    padding: 5px;
+    margin: auto;
+    background-color:rgba(0, 255, 4, 0.5);
+    }
+    
+    #barranav ul {
+        list-style-type:none;
+        display: flex;
+        width: 1040px;
+        height: 66px;
+        padding: 8px ;
+        overflow:hidden;
+        background-color:rgba(0, 255, 4, 0.5);
+    
+    }
+
+    #barranav {
+    
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    
+    
+    
+    }
+    #navbar {
+
+        margin: auto 1800px auto auto;
+    }
+    #barranav a:visited{
+    
+        color: white;
+    }
+    
+    #barranav li{
+        float:left;
+        padding:  0px 15px;
+    
+    }
+    
+    #barranav li a{
+    
+     display: block;
+     padding: 15px;
+     text-decoration: dotted;   
+    }
+    
+    .buttonClass {
+    
+    
+        font-size:15px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        width:140px;
+        height:50px;
+        border-width:1px;
+        color:#fff;
+        border-color:#1f2f47;
+        border-radius: 15px;
+        box-shadow:inset 0px 0px 15px 3px #23395e;
+        text-shadow:inset 0px 1px 0px #263666;
+        background:linear-gradient(#2e466e, #415989);
+        text-align: center;
+        padding: 15px;
+        }
+          
+          .buttonClass:hover {
+            background: linear-gradient(#415989, #2e466e);
+          }
+    
+body{
+    background-image:url(https://get.pxhere.com/photo/tree-nature-forest-branch-light-night-sunlight-leaf-green-jungle-darkness-rainforest-woodland-habitat-ecosystem-natural-environment-geographical-feature-computer-wallpaper-163052.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+   
+  
+    }
+
+    #Bloque {
+        width: 95%;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid white;
+        background-color:rgba(0, 255, 4, 0.5);
+        border: 1px solid white;
+    }
+   
+    #Introducción {
+
+        border: 1px solid red;
+        padding: 10px;
+        display: flex;
+        text-align: left;
+        float: center;
+    
+    }
+    
+    h1 {
+        font-size: 250%;
+        text-align: center;
+        text-decoration: underline;
+    
+    }
+    h2 {
+    
+        padding: 10px;
+    
+    }
+    
+    #columnaDerecha {
+        border: 1px solid green;
+        float: right;
+        column-count: 1;
+        column-gap: 80px;
+        column-fill: auto;
+        padding: 10px;
+        height: 370px;
+        width: 200px;
+        margin: auto;
+        
+    
+    
+    }
+    
+    #columnaDerecha li {
+        list-style-type: none;
+        text-align: left;
+        text-decoration: none;
+       
+    
+    }
+    
+    #columnaDerecha li a {
+    
+        text-decoration: none;
+        color: white;
+       
+    }
+    
+    #Fisico {
+        border: 1px solid white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    
+    #Fisico img {
+        width: 13%;
+        float: right;
+        display: flex;
+       margin-bottom: 70px;
+        padding: 15px;
+        margin-right: 200px;
+    }
+    #Fisico p{
+
+    display: inline-block;
+    width: 56%;
+    padding: 10px;
+    }
+
+    #Habitat {
+    
+    border: 1px solid pink;
+    display: flex;
+    
+    }
+   
+    #comportamiento{
+        border: 1px solid blue;
+        text-align: right;
+        width: 100%;
+        margin-right: 10px;
+       display:flex
+    }
+    #comportamiento p{
+
+      width: 69%;  
+    }
+    #comportamiento img{
+
+    float: left;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    }
+    
+   
+    
+    
+    
+    #OtrosPost a{
+    
+        list-style-type: none;
+        text-decoration: none;
+    
+    
+    }
+    #OtrosPost a:visited{
+    
+    color: black;
+    }
+    
+    
