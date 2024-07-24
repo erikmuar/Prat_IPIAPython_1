@@ -4,7 +4,7 @@
 class Pajaro: 
     alas = True # Atributo de clase
     
-    def __init__(self,color,especie):
+    def __init__(self,color,especie): #Atributos de instancia
         self.color= color 
         self.especie = especie 
     
